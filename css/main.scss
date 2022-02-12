@@ -1,0 +1,302 @@
+body {
+    background-color: #121212;
+    font-family: 'Consolas';
+    margin: 0;
+}
+
+.navbar {
+    background-color: #282828;
+    height: 6rem;
+}
+
+.logo {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-left: 7rem;
+    // background-color: white;
+}
+
+a.logo__text {
+    margin:0;
+    // background-color: blue;
+}
+
+.logo__parenthesis {
+    padding: 0;
+    margin:-0.8rem;
+    border:0;
+    color: #32E2A7;
+}
+
+.menu {
+    display: inline-flex;
+    float: right;
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin:0;
+    margin-right: 3rem;
+    // position: absolute;
+    // background-color: wheat;
+}
+
+.menu__item {
+    margin: 0;
+    margin-right: 0;
+    padding: 0.5rem 0rem;
+    // background-color: lightcoral;
+    text-align: center;
+    // background-color: wheat;
+}
+
+.menu__item__link {
+    padding: 1.88rem 2rem;
+    margin: 0;
+    // background-color: lightblue;
+}
+
+.menu__item:hover {
+    background-color: #525252;
+    box-shadow: inset 0 0 0 1px #32E2A7;
+    text-shadow: 0 -1px #32E2A7;
+}
+
+.menu__item--current {
+    font-weight: bold;
+    background-color: #525252;
+}
+
+.submenu--tutorias {
+    color: white;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    width: 10rem;
+    list-style-type: none;
+    background-color: #282828;
+    opacity: 0;
+    border-radius: 0 0 40px 40px;
+    float: right;
+    margin-right: 16.4rem;
+}
+
+.submenu--tutorias__item {
+    padding: 1rem;
+    margin-right: 0;
+    width: 15rem;
+    align-items: center;
+    // border: 10px solid white;
+    // background-color: blanchedalmond;
+    margin: 0;
+    opacity: inherit;
+}
+
+.submenu--tutorias__item--c3{
+    border-radius: 0;
+    margin: 0;
+    opacity: inherit;
+    span {
+        color: #86FC77;
+    }
+}
+
+.submenu--tutorias__item__link {
+    padding: 2rem;
+    display: block;
+    opacity: inherit;
+    margin: 0;
+    text-align: center;
+    // background-color: lightseagreen;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.submenu--tutorias__item:hover {
+    background-color: #525252;
+    box-shadow: inset 0 0 0 1px #32E2A7;
+    text-shadow: 0 -1px #32E2A7;
+    .submenu--tutorias__item__link {
+        background-color: #525252;
+        // box-shadow: inset 0 0 0 1px #32E2A7;
+        text-shadow: 0 -1px #32E2A7;
+    }
+}
+
+.hero {
+
+    h1 {
+        color: white;
+        font-size: 4em;
+        font-weight: normal;
+        padding-left: 181px;
+    }
+
+    .hero-right-message {
+        color: white;
+        float: right;
+        margin-right: 134px;
+        padding-right: 23.5px;
+        padding-left: 23.5px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 44px 0 44px 44px;
+        background: #282828;
+    }
+
+    .hero-left-message {
+        float: left; 
+        color: white;
+        background: #282828;
+        margin-left: 141px;
+        margin-top: 247px;
+        margin-right: 134px;
+        padding-right: 23.5px;
+        padding-left: 23.5px;
+        padding-top: 23px;
+        padding-bottom: 23px;
+        border-radius: 0 44px 44px 44px;
+    }
+    
+    .q-image {
+        float: right;
+        width: 343px;
+        margin-right: 225px;
+        margin-top: 118px;
+        // background: white;
+    }
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .mobile__menu{
+        // background-color: aquamarine;
+        cursor: pointer;
+        display: block;
+        float: right;
+        margin: 0;
+        margin-right: 2rem;
+        margin-top: 1.5rem;
+    }
+    .menu {
+        display: none;
+        margin: 0;
+    }
+
+    .mobile__submenu {
+        display: none; //mobile menu display 
+        position: fixed;
+        right: 0;
+        width: 100%;
+        background-color: #282828;
+        align-items: center;
+        margin: 0;
+        border-radius: 0 0 40px 40px;
+    }
+
+    .mobile__submenu__list {
+        list-style-type: none;
+        // background-color: #32E2A7;
+        // border: 5px solid white;
+        margin: 0;
+        padding: 2rem 0;
+        align-items: center;
+        li {
+            align-items: center;
+            text-align: center;
+            // background-color: cadetblue;
+            margin: 0;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            border-top: 1px solid #868585;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 0;
+            padding:2rem;
+            // background-color: cadetblue;
+        }
+
+        .mobile_submenu_tutorias_acordion {
+            display: none;
+            text-align: center;
+            // background-color: #32E2A7;
+            padding: 0rem ;
+            .acordion {
+                display: block;
+                // border-top: 1px solid #32E2A7;
+            }
+
+            .acordion--ed {
+                box-shadow: inset 0 0 0 1px #32E2A7;
+            }
+
+            .acordion--c3 {
+                span {color: #86FC77;}
+                box-shadow: inset 0 0 0 1px #32E2A7;
+            }
+        }
+
+        .active {
+            background-color: #525252;
+        }
+
+        .mobile__submenu__item--curent {
+            font-weight: bolder;
+            font-size: large;
+            // background-color: #525252;
+        }
+        .mobile__submenu__item--last{
+            border-bottom: 1px solid #868585;
+        }
+    }
+    
+    .hero {
+
+        .container {
+            display: absolute;
+            margin-top: -10rem;
+            // background-color: #868585;
+        }
+        h1 {
+            font-size: 2.5rem;
+            display: inline-block;
+            padding-left: 2rem;
+            // background-color: #86FC77;
+        }
+
+        .hero-right-message {
+            margin: 0;
+            width: 50vw;
+        }
+        
+        .hero-left-message {
+            margin: 0;
+            width: 40vw;
+            margin-top: 2rem;
+            // position: absolute;
+
+        }
+
+        .q-image {
+            margin: 0;
+            padding: 0;
+            width: 45%;
+            margin-top: 5rem;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin's World</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./index.html" class="logo logo__text">Kevin's World <span class="logo logo__parenthesis">()</span></a>
+        </div>
+
+        <!-- Menú mobile view -->
+        <box-icon name='menu' class="mobile mobile__menu" color = "white" size="lg" id="menu_mobile"></box-icon>
+
+        <div class="mobile mobile__submenu" id="submenu--mobile">
+            <ul class="mobile__submenu__list">
+                <li><a href="#" class="mobile__submenu__item mobile__submenu__item--curent">Inicio</a></li>
+                <li class="li_tutorias" id="li_tutorias"><a href="#" class="mobile__submenu__item mobile__submenu__item--tutorias" id = "mobile_tutorias">Tutorías</a></li>
+                <div class="mobile_submenu_tutorias_acordion" id="acordion">
+                    <a href="https://drive.google.com/drive/u/0/folders/1-CSd5SlINqi3OlKFaEH4t6Y0astHNc_Z" target="_blank" class="acordion acordion--c3">Cálculo <span>III</span></a>
+                    <a href="https://drive.google.com/drive/u/0/folders/1-DeZsbDkoIl30YEYMGR9sqr7GJOdSV8j" target="_blank" class="acordion acordion--ed">Ecuaciones Diferenciales</a>
+                </div>
+                <li><a href="#" class="mobile__submenu__item">Proyectos</a></li>
+                <li class="mobile__submenu__item--last"><a href="#" class="mobile__submenu__item">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <div class="menu menu__item menu__item--current menu__item--inicio">
+                <a href="./index.html" class="menu menu__item__link menu__item__link--current">Inicio</a>
+            </div>
+            <div class="menu menu__item menu__item--tutorias" id="menu__item--tutorias">
+                <a href="#" class="menu menu__item__link">Tutorías</a>
+            </div>
+            <div class="menu menu__item menu__item--proyectos">
+                <a href="#" class="menu menu__item__link">Proyectos</a>
+            </div>
+            <div class="menu menu__item menu__item--contacto">
+                <a href="#" class="menu menu__item__link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="submenu--tutorias" id = "submenu--tutorias">
+        <!-- Implementar el resto de sub menús, pero empezar con tutorías -->
+        <div class="submenu--tutorias submenu--tutorias__item submenu--tutorias__item--c3">
+            <a href="#" class="submenu--tutorias submenu--tutorias__item__link">Cálculo <span>III</span></a>
+        </div>
+        <div class="submenu--tutorias submenu--tutorias__item submenu--tutorias__item--ed">
+            <a href="#" class="submenu--tutorias submenu--tutorias__item__link">Ecuaciones Diferenciales</a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Bienvenido <br>a mi mundo;</h1>
+
+            <div class="hero-right-message">
+                <p>Este es el lugar donde se reúnen mis proyectos <br>
+                    personales de programación, seguramente alguno te pueda <br>
+                    parecer interesante. Ojo, ¡algunos pueden estar en <br>
+                    progreso!</p>
+            </div>
+
+            <div class="hero-left-message">
+                Además, si vienes por instructorías o tutorías de la U, <br>
+                podrás encontrar todo el material de ciclos pasados <br>
+                en la sección 'Tutorías'. <br>
+                <br>
+                No dudes en ponerte en contacto por cualquier consulta.
+            </div>
+
+            <img class="q-image" src="images/KWQLogo.png" alt="">
+        </div>
+    </section>
+
+    <!-- Js file -->
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+</body>
+</html>
